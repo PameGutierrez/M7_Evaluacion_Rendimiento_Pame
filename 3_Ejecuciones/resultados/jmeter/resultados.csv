@@ -1,0 +1,61 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1756074168383,906,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-1,text,true,,2461,122,2,2,https://reqres.in/api/users?page=2,904,0,798
+1756074169199,272,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-2,text,true,,2461,122,2,2,https://reqres.in/api/users?page=2,269,0,148
+1756074169293,262,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-1,text,true,,1704,117,2,2,https://reqres.in/api/users/2,261,0,185
+1756074169473,216,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-2,text,true,,1703,117,2,2,https://reqres.in/api/users/2,214,0,132
+1756074169556,712,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-1,text,false,,1366,231,3,3,https://reqres.in/api/login,712,0,151
+1756074169691,677,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-2,text,false,,1366,226,3,3,https://reqres.in/api/login,677,0,137
+1756074170199,205,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-3,text,true,,2460,122,3,3,https://reqres.in/api/users?page=2,204,0,129
+1756074170301,238,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-1,text,true,,2460,122,3,3,https://reqres.in/api/users?page=2,237,0,145
+1756074170405,246,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-3,text,true,,1704,117,3,3,https://reqres.in/api/users/2,244,0,122
+1756074170369,283,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-2,text,true,,2460,122,3,3,https://reqres.in/api/users?page=2,281,0,153
+1756074170541,203,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-1,text,true,,1703,117,3,3,https://reqres.in/api/users/2,201,0,127
+1756074170653,224,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-2,text,true,,1703,117,3,3,https://reqres.in/api/users/2,223,0,145
+1756074170879,400,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-2,text,false,,1366,226,4,4,https://reqres.in/api/login,399,0,112
+1756074170653,690,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-3,text,false,,1366,236,3,3,https://reqres.in/api/login,689,0,145
+1756074170747,647,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-1,text,false,,1366,231,3,3,https://reqres.in/api/login,645,0,125
+1756074171194,239,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-4,text,true,,2461,122,2,2,https://reqres.in/api/users?page=2,238,0,135
+1756074171348,235,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-3,text,true,,2459,122,2,2,https://reqres.in/api/users?page=2,234,0,146
+1756074171435,212,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-4,text,true,,1703,117,2,2,https://reqres.in/api/users/2,211,0,126
+1756074171583,192,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-3,text,true,,1703,117,2,2,https://reqres.in/api/users/2,190,0,119
+1756074171648,680,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-4,text,false,,1370,236,3,3,https://reqres.in/api/login,673,0,145
+1756074171776,637,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-3,text,false,,1370,231,3,3,https://reqres.in/api/login,626,0,141
+1756074172197,222,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-5,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,221,0,140
+1756074172329,209,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-4,text,true,,2459,122,2,2,https://reqres.in/api/users?page=2,209,0,131
+1756074172421,194,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-5,text,true,,1703,117,2,2,https://reqres.in/api/users/2,190,0,121
+1756074172540,213,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-4,text,true,,1703,117,2,2,https://reqres.in/api/users/2,207,0,133
+1756074172617,636,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-5,text,false,,1370,226,3,3,https://reqres.in/api/login,636,0,133
+1756074172755,688,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-4,text,false,,1370,236,3,3,https://reqres.in/api/login,651,0,132
+1756074173191,254,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-6,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,253,0,149
+1756074173255,202,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-5,text,true,,2459,122,2,2,https://reqres.in/api/users?page=2,201,0,132
+1756074173446,228,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-6,text,true,,1703,117,2,2,https://reqres.in/api/users/2,227,0,140
+1756074173457,218,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-5,text,true,,1703,117,2,2,https://reqres.in/api/users/2,217,0,140
+1756074173676,408,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-5,text,false,,1366,226,2,2,https://reqres.in/api/login,407,0,123
+1756074173676,409,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-6,text,false,,1366,231,2,2,https://reqres.in/api/login,408,0,123
+1756074174087,213,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-6,text,true,,2459,122,2,2,https://reqres.in/api/users?page=2,211,0,131
+1756074174192,251,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-7,text,true,,2461,122,2,2,https://reqres.in/api/users?page=2,250,0,172
+1756074174301,205,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-6,text,true,,1703,117,2,2,https://reqres.in/api/users/2,204,0,125
+1756074174445,202,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-7,text,true,,1703,117,2,2,https://reqres.in/api/users/2,200,0,121
+1756074174507,417,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-6,text,false,,1370,236,2,2,https://reqres.in/api/login,403,0,114
+1756074174649,677,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-7,text,false,,1370,231,2,2,https://reqres.in/api/login,676,0,124
+1756074175187,220,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-8,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,219,0,131
+1756074175328,209,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-7,text,true,,2459,122,2,2,https://reqres.in/api/users?page=2,208,0,113
+1756074175409,220,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-8,text,true,,1704,117,2,2,https://reqres.in/api/users/2,219,0,130
+1756074175538,227,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-7,text,true,,1703,117,2,2,https://reqres.in/api/users/2,227,0,145
+1756074175630,469,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-8,text,false,,1370,226,2,2,https://reqres.in/api/login,422,0,121
+1756074175765,418,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-7,text,false,,1370,236,2,2,https://reqres.in/api/login,416,0,126
+1756074176104,273,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-8,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,271,0,153
+1756074176185,215,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-9,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,214,0,140
+1756074176378,210,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-8,text,true,,1703,117,2,2,https://reqres.in/api/users/2,208,0,142
+1756074176401,197,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-9,text,true,,1703,117,2,2,https://reqres.in/api/users/2,194,0,133
+1756074176599,411,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-9,text,false,,1370,226,2,2,https://reqres.in/api/login,410,0,125
+1756074176589,603,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-8,text,false,,1370,231,3,3,https://reqres.in/api/login,590,0,119
+1756074177012,220,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-9,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,219,0,145
+1756074177188,182,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-10,text,true,,2460,122,2,2,https://reqres.in/api/users?page=2,181,0,121
+1756074177233,192,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-9,text,true,,1703,117,2,2,https://reqres.in/api/users/2,191,0,118
+1756074177372,183,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-10,text,true,,1703,117,2,2,https://reqres.in/api/users/2,182,0,113
+1756074177427,385,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-9,text,false,,1366,236,2,2,https://reqres.in/api/login,384,0,118
+1756074177556,430,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-10,text,false,,1366,231,1,1,https://reqres.in/api/login,428,0,138
+1756074177988,223,GET Lista de usuarios,200,OK,TG - Flujo básico (GET/GET/POST) 1-10,text,true,,2459,122,1,1,https://reqres.in/api/users?page=2,222,0,153
+1756074178212,264,GET Usuario por ID,200,OK,TG - Flujo básico (GET/GET/POST) 1-10,text,true,,1704,117,1,1,https://reqres.in/api/users/2,263,0,122
+1756074178479,434,POST Login,401,Unauthorized,TG - Flujo básico (GET/GET/POST) 1-10,text,false,,1370,226,1,1,https://reqres.in/api/login,420,0,133

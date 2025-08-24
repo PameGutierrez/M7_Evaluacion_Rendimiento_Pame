@@ -1,0 +1,18 @@
+{
+  "metrics": {
+    "http_req_duration": {
+      "avg": 362.90000000000003,
+      "p(90)": 494.90000000000003,
+      "p(95)": 524.9
+    },
+    "http_req_failed": {
+      "rate": 0.015233333333333335
+    },
+    "iterations": {
+      "count": 320
+    }
+  },
+  "timestamps": {
+    "generated_at": "2025-08-24T21:17:42.808762Z"
+  }
+}
