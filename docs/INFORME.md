@@ -1,4 +1,4 @@
-﻿# Informe breve – Configuración, problemas y soluciones
+﻿# Informe – Configuración, problemas y soluciones
 
 ## Configuración elegida
 - Apache JMeter 5.6.3 (Java 23), ejecución Non-GUI.
