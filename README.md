@@ -1,3 +1,7 @@
+## Informe
+[Ver Informe (GitHub Pages)](https://pamegutierrez.github.io/M7_Evaluacion_Rendimiento_Pame/informe.html)
+
+
 ## Informe (Dashboard JMeter)
 [▶️ Ver Dashboard](https://pamegutierrez.github.io/M7_Evaluacion_Rendimiento_Pame/jmeter-dashboard/)
 
