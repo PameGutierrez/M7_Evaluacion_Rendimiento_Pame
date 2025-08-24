@@ -27,7 +27,7 @@ run_all.ps1
   mosaico.md
 ```
 
-## Uso (real)
+## Uso 
 - **Windows**: `./run_all.ps1 -USERS 10 -RAMP 10 -LOOPS 2`
 - **Linux/macOS**:
   ```bash
