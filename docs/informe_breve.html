@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Informe breve – Configuración, problemas y soluciones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{--bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#22d3ee;}
+    body{margin:0;background:linear-gradient(180deg,#0b1220,#0f172a);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;color:var(--text);line-height:1.6}
+    .wrap{max-width:900px;margin:48px auto;padding:0 20px}
+    .card{background:linear-gradient(180deg,#0f172a,#0b1220);border:1px solid #1f2937;border-radius:16px;padding:28px;margin:18px 0;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    h1{font-size:28px;margin:0 0 6px}
+    h2{font-size:20px;color:var(--accent);margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px;margin-bottom:14px}
+    a{color:#7dd3fc;text-decoration:none;border-bottom:1px dashed #7dd3fc}
+    a:hover{opacity:.9;border-bottom-style:solid}
+    ul{margin:8px 0 0 18px}
+    .pill{display:inline-block;padding:4px 10px;border:1px solid #334155;border-radius:999px;font-size:12px;color:#cbd5e1;background:#0b1220}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Informe breve</h1>
+      <div class="muted">Configuración, problemas identificados y soluciones propuestas</div>
+      <div class="pill">Generado por Pame – Módulo 7</div>
+    </div>
+
+    <div class="card">
+      <h2>Configuración elegida</h2>
+      <ul>
+        <li><strong>Herramienta:</strong> Apache JMeter 5.6.3 (Java 23) en modo <em>Non-GUI</em>.</li>
+        <li><strong>Escenarios HTTP</strong> sobre <code>reqres.in</code>:
+          <ul>
+            <li>GET <code>/api/users?page=2</code></li>
+            <li>GET <code>/api/users/2</code></li>
+            <li>POST <code>/api/login</code> (JSON; credenciales desde CSV)</li>
+          </ul>
+        </li>
+        <li><strong>Plan:</strong> <code>1_Scripts/jmeter/plan_pruebas.jmx</code> con <em>CSV Data Set Config</em> (<code>datasets/login.csv</code>).</li>
+        <li><strong>Parámetros:</strong> <code>USERS</code>, <code>RAMP</code> (s), <code>LOOPS</code>.</li>
+        <li><strong>Dashboard HTML:</strong> publicado en GitHub Pages:
+          <a href="https://pamegutierrez.github.io/M7_Evaluacion_Rendimiento_Pame/jmeter-dashboard/" target="_blank" rel="noopener">ver informe</a>.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Problemas identificados</h2>
+      <ul>
+        <li>Bloqueo de scripts en PowerShell (ExecutionPolicy) al ejecutar <code>.ps1</code>.</li>
+        <li>PATH incompleto (faltaba <code>C:\Windows\System32</code> y/o Java en PATH) → JMeter no encontraba el JDK.</li>
+        <li>Publicación en GitHub Pages: 404 inicial y build de Jekyll intentando aplicar un tema.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Soluciones propuestas / aplicadas</h2>
+      <ul>
+        <li><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass</code> y <code>Unblock-File</code> para ejecutar scripts.</li>
+        <li>PATH saneado en la sesión: <code>C:\Windows\System32;</code> <code>C:\apache-jmeter-5.6.3\bin;</code> <code>%JAVA_HOME%\bin</code> (Java 23).</li>
+        <li>Generación del dashboard: <code>jmeter -g &lt;csv&gt; -o .\docs\jmeter-dashboard</code>.</li>
+        <li>GitHub Pages: branch <code>main</code>, carpeta <code>/docs</code>, y archivo <code>.nojekyll</code> para servir estáticos.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Recomendaciones y siguientes pasos</h2>
+      <ul>
+        <li>Escalar carga (USERS 10→50→100) y vigilar <strong>p95 &lt; 800 ms</strong> y <strong>errores &lt; 5%</strong>.</li>
+        <li>Añadir <em>Assertions</em> (código 200 + validaciones JSON) y revisar keep-alive, compresión y caché.</li>
+        <li>Optimizar endpoints con peores percentiles; evaluar escalado horizontal y repetir pruebas.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
