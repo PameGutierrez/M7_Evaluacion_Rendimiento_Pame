@@ -1,3 +1,6 @@
+## Informe (Dashboard JMeter)
+[▶️ Ver Dashboard](https://pamegutierrez.github.io/M7_Evaluacion_Rendimiento_Pame/jmeter-dashboard/)
+
 # Proyecto M7 · Evaluación de Rendimiento y Escalabilidad
 
 ## Requisitos previos
