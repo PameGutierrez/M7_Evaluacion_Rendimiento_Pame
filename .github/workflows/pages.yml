@@ -20,31 +20,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Construye un sitio estatico con ambas cosas:
-      # - Dashboard: 3_Ejecuciones/informes/dashboard -> /jmeter-dashboard/
-      # - Informe:  docs/informe.html                -> /informe.html
+      # Construye un sitio estático con AMBOS:
+      # - Copia el dashboard (fuera de docs) a /jmeter-dashboard/
+      # - Copia tu informe (docs/informe.html) a la raíz del sitio
       - name: Build site folder
         run: |
           mkdir -p site/jmeter-dashboard
           cp -r "3_Ejecuciones/informes/dashboard/." "site/jmeter-dashboard/"
 
-          # Copia el informe si existe (ajusta el nombre si cambiara)
-          if [ -f "docs/informe.html" ]; then
-            cp "docs/informe.html" "site/informe.html"
-          fi
+          # Copia el informe (según tu ruta exacta)
+          cp "docs/informe.html" "site/informe.html"
 
-          # Página de inicio opcional con enlaces
+          # Página de inicio con enlaces (opcional)
           cat > site/index.html <<'HTML'
-          <!doctype html>
-          <html lang="es"><meta charset="utf-8">
-          <title>M7 – Informes</title>
-          <body style="font-family:system-ui; padding:24px">
+          <!doctype html><meta charset="utf-8"><title>M7 – Informes</title>
+          <body style="font-family:system-ui;padding:24px">
             <h1>M7 – Informes publicados</h1>
             <ul>
               <li><a href="./jmeter-dashboard/">Dashboard JMeter</a></li>
               <li><a href="./informe.html">Informe</a></li>
             </ul>
-          </body></html>
+          </body>
           HTML
 
           # Desactiva Jekyll por si acaso
@@ -58,4 +54,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
