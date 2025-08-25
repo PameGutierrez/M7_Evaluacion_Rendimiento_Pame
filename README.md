@@ -1,5 +1,5 @@
 ## Informe
-[Ver Informe (GitHub Pages)](https://github.com/PameGutierrez/M7_Evaluacion_Rendimiento_Pame/commit/6a21d3efc294c9338f1c2a86326edb3f11594505)
+[Ver Informe (GitHub Pages)](https://pamegutierrez.github.io/M7_Evaluacion_Rendimiento_Pame/informe.html)
 
 
 ## Informe (Dashboard JMeter)
