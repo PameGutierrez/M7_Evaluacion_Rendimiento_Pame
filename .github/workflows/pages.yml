@@ -1,4 +1,4 @@
-name: Deploy JMeter dashboard to Pages
+name: Deploy dashboard to Pages
 
 on:
   push:
@@ -16,22 +16,15 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Prepare site folder
-        run: |
-          mkdir -p site/jmeter-dashboard
-          cp -r "3_Ejecuciones/informes/dashboard/." "site/jmeter-dashboard/"
-
-      - name: Upload artifact
+      # Publica el dashboard como raíz del sitio (index.html en la raíz)
+      - name: Upload artifact (dashboard as site root)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: 3_Ejecuciones/informes/dashboard
 
       - name: Deploy to GitHub Pages
         id: deployment
